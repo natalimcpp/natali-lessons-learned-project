@@ -33,7 +33,7 @@ describe.only('2 - Adicione uma barra superior com um título', () => {
   });
 });
 
-describe('3 - Adicione uma foto sua à página', () => {
+describe.only('3 - Adicione uma foto sua à página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -43,7 +43,7 @@ describe('3 - Adicione uma foto sua à página', () => {
   });
 });
 
-describe('4 - Adicione uma lista de lições aprendidas à página', () => {
+describe.only('4 - Adicione uma lista de lições aprendidas à página', () => {
   beforeEach(() => {
     cy.visit('/');
   });

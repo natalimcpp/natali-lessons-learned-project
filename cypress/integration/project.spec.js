@@ -81,7 +81,7 @@ describe.only('6 - Adicione um rodapé para a página', () => {
   });
 });
 
-describe('7 - Insira pelo menos um link externo na página', () => {
+describe.only('7 - Insira pelo menos um link externo na página', () => {
   beforeEach(() => {
     cy.visit('/');
   });

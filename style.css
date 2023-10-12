@@ -1,14 +1,38 @@
 body {
-
-   background-color: rgb(253, 251, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(253, 251, 251);
 }
 
 #cabecalho {
+
     top: 0px;
-    position: absolute;
+    position: fixed;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
+    margin:15 15 0 0;
 }
 
 #minha_foto {
     height: 30rem;
     width: auto;
+}
+
+#conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+
+#rodape {
+    position: fixed;
+    bottom: 0px;
 }

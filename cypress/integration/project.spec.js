@@ -57,7 +57,7 @@ describe.only('4 - Adicione uma lista de lições aprendidas à página', () => 
   });
 });
 
-describe('5 - Crie uma lista de lições que ainda deseja aprender para a página', () => {
+describe.only('5 - Crie uma lista de lições que ainda deseja aprender para a página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -71,7 +71,7 @@ describe('5 - Crie uma lista de lições que ainda deseja aprender para a págin
   });
 });
 
-describe('6 - Adicione um rodapé para a página', () => {
+describe.only('6 - Adicione um rodapé para a página', () => {
   beforeEach(() => {
     cy.visit('/');
   });

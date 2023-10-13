@@ -2,7 +2,7 @@ import {
   shouldExist,
 } from '../actions/ActionBase';
 
-describe.only('1 - Adicione uma cor de fundo específica para a página', () => {
+describe('1 - Adicione uma cor de fundo específica para a página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -13,7 +13,7 @@ describe.only('1 - Adicione uma cor de fundo específica para a página', () => 
   });
 });
 
-describe.only('2 - Adicione uma barra superior com um título', () => {
+describe('2 - Adicione uma barra superior com um título', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -33,7 +33,7 @@ describe.only('2 - Adicione uma barra superior com um título', () => {
   });
 });
 
-describe.only('3 - Adicione uma foto sua à página', () => {
+describe('3 - Adicione uma foto sua à página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -43,7 +43,7 @@ describe.only('3 - Adicione uma foto sua à página', () => {
   });
 });
 
-describe.only('4 - Adicione uma lista de lições aprendidas à página', () => {
+describe('4 - Adicione uma lista de lições aprendidas à página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -57,7 +57,7 @@ describe.only('4 - Adicione uma lista de lições aprendidas à página', () => 
   });
 });
 
-describe.only('5 - Crie uma lista de lições que ainda deseja aprender para a página', () => {
+describe('5 - Crie uma lista de lições que ainda deseja aprender para a página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -71,7 +71,7 @@ describe.only('5 - Crie uma lista de lições que ainda deseja aprender para a p
   });
 });
 
-describe.only('6 - Adicione um rodapé para a página', () => {
+describe('6 - Adicione um rodapé para a página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -81,7 +81,7 @@ describe.only('6 - Adicione um rodapé para a página', () => {
   });
 });
 
-describe.only('7 - Insira pelo menos um link externo na página', () => {
+describe('7 - Insira pelo menos um link externo na página', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -97,7 +97,7 @@ describe.only('7 - Insira pelo menos um link externo na página', () => {
   });
 });
 
-describe.only('8 - Crie um artigo sobre seu aprendizado', () => {
+describe('8 - Crie um artigo sobre seu aprendizado', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -116,7 +116,7 @@ describe.only('8 - Crie um artigo sobre seu aprendizado', () => {
   });
 });
 
-describe.only('9 - Crie uma seção que conta uma passagem sobre seu aprendizado', () => {
+describe('9 - Crie uma seção que conta uma passagem sobre seu aprendizado', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -135,7 +135,7 @@ describe.only('9 - Crie uma seção que conta uma passagem sobre seu aprendizado
   });
 });
 
-describe.only('10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles', () => {
+describe('10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -168,7 +168,7 @@ describe.only('10 - Aplique elementos HTML de acordo com o sentido e propósito 
 describe('11 - Teste a semântica da sua página está aprovada pelo site achecker', () => {
   it('Seu site deve passar sem problemas na verificação de semântica do site achecker', () => {
     cy.readFile('./index.html').then((content) => {
-      cy.visit('https://achecker.ca/checker/index.php');
+      cy.visit('https://websiteaccessibilitychecker.com/checker/index.php');
       cy.contains('Paste HTML Markup').click();
       cy.get('textarea').type(content);
       cy.get('#validate_paste').click();

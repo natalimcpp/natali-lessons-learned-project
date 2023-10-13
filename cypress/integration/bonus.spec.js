@@ -15,7 +15,7 @@ describe.only('12 - Adicione uma tabela à página', () => {
   });
 });
 
-describe('13 - Utilize o Box model', () => {
+describe.only('13 - Utilize o Box model', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -28,7 +28,7 @@ describe('13 - Utilize o Box model', () => {
   });
 });
 
-describe('14 - Altere atributos relacionados as fontes', () => {
+describe.only('14 - Altere atributos relacionados as fontes', () => {
   beforeEach(() => {
     cy.visit('/');
   });

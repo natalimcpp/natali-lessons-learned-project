@@ -97,7 +97,7 @@ describe.only('7 - Insira pelo menos um link externo na página', () => {
   });
 });
 
-describe('8 - Crie um artigo sobre seu aprendizado', () => {
+describe.only('8 - Crie um artigo sobre seu aprendizado', () => {
   beforeEach(() => {
     cy.visit('/');
   });

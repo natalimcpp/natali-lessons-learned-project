@@ -2,7 +2,6 @@
 
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -36,14 +35,15 @@ body {
     margin:15 0 15 0;
     font-family: 'Comfortaa', sans-serif;
     font-size: 3rem;
+    color: #F4B0C7;
 }
 
 #conteudo {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 8%;
-    padding:10%;
+    margin-top: 5rem;
+    padding: top 80px;
     width: 100%;
     font-family:'Gabarito', sans-serif;
 }
@@ -58,7 +58,7 @@ body {
 
 th, td {
     border: 1px solid #186F65;
-    padding: 15 0 15 0;
+    padding: 15px 15px 15px 15px;
 }
 
 #container {
@@ -67,6 +67,7 @@ th, td {
     width: 60%;
     line-height: 1.5;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 #minha_foto {
@@ -96,6 +97,8 @@ th, td {
 #container_texto {
     display: flex;
     color: #632626;
+    justify-content: center;
+    align-items: center;
 }
 
 #rodape {

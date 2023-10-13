@@ -5,7 +5,7 @@ import {
   verifyExistingStyle,
 } from '../actions/ActionBase';
 
-describe('12 - Adicione uma tabela à página', () => {
+describe.only('12 - Adicione uma tabela à página', () => {
   beforeEach(() => {
     cy.visit('/');
   });

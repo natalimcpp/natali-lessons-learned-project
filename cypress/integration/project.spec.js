@@ -116,7 +116,7 @@ describe.only('8 - Crie um artigo sobre seu aprendizado', () => {
   });
 });
 
-describe('9 - Crie uma seção que conta uma passagem sobre seu aprendizado', () => {
+describe.only('9 - Crie uma seção que conta uma passagem sobre seu aprendizado', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -135,7 +135,7 @@ describe('9 - Crie uma seção que conta uma passagem sobre seu aprendizado', ()
   });
 });
 
-describe('10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles', () => {
+describe.only('10 - Aplique elementos HTML de acordo com o sentido e propósito de cada um deles', () => {
   beforeEach(() => {
     cy.visit('/');
   });

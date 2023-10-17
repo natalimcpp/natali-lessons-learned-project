@@ -78,6 +78,7 @@ th, td {
     height: 30rem;
     width: auto;
     border-radius: 4px;
+    padding: 5px 5px 0px 5px;
 }
 
 #container_listas {
@@ -89,10 +90,12 @@ th, td {
     flex-direction: row;
     color: #20262E;
     padding: 15px;
+    margin-top: 10rem;
 }
 
 .conteudo_legenda {
     font-size: 12px;
+    margin-top: 0px;
 }
 
 #container_texto {
@@ -119,4 +122,62 @@ th, td {
     text-decoration: none;
     width: 100%;
     z-index: 1;
+}
+
+@media (max-width: 1500px) {
+
+    body {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        background-color: rgb(253, 251, 251);
+    }
+
+    #tabela {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    #container {
+        position: relative;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #container_listas {
+
+        display: flex;
+        border: 1px solid #186F65;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column; /* Altere para uma coluna em telas menores */
+        color: #20262E;
+        padding: 15px;
+        width: 100%; /* Largura total */
+        padding-top: 12rem; /* Espaçamento acima suficiente para evitar o corte */
+        position:sticky;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+
+
+    #cabecalho {
+        height: 9rem;
+    }
+
+    #titulo {
+        font-size: 2rem;
+    }
+
+    #minha_foto {
+        height: 20rem;
+        width: auto;
+    }
 }

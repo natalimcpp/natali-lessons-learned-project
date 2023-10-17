@@ -66,7 +66,7 @@ describe.only('14 - Altere atributos relacionados as fontes', () => {
   });
 });
 
-describe('15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro', () => {
+describe.only('15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro', () => {
   beforeEach(() => {
     cy.visit('/');
   });
